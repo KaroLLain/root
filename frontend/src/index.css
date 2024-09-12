@@ -1,0 +1,252 @@
+main{
+    min-height: 80vh;
+}
+
+h1 {
+    font-size: 1.8rem;
+    padding: 2rem 0 0 3rem ;
+}
+
+h2{
+    font-size: 1.4rem;
+    padding: .5rem 0;
+}
+
+h3 {
+    padding: 1rem 0;
+}
+
+header {
+    display: grid;
+    justify-content: space-evenly;
+}
+
+.navbar {
+    width: 100vw;
+}
+
+.mainWrapper {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr;
+}
+
+.parentElement {
+    display: grid;
+    /* grid-column: 2 / 3; */
+}
+
+.homeScreenWrapper {
+    display: grid;
+    justify-items: center;
+}
+
+.viewWidthWrapper {
+    max-width: 1300px;
+    padding: 1rem;
+}
+
+.profileScreenPadiing {
+    padding: 0 5rem 0 12rem;
+}
+
+.paddingFrame {
+    padding: 1rem 2rem;
+}
+
+.paddingFrameBig{
+    padding: 1rem 13rem;
+}
+
+.centeredProductScreen {
+    max-width: 1700px;
+    justify-self: center;
+}
+
+.productCard {
+    min-height: 32rem;
+    max-height: 45rem;
+}
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.productName {
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #4B5243;
+}
+
+
+.rating span {
+    margin-right: .1rem;
+}
+
+.carousel {
+    display: grid;
+}
+
+.carousel img {
+    display: block;
+    height: 30rem;
+    padding: 1rem 1rem 6rem;
+    margin: 1rem;
+    border-top-left-radius: 20%;
+    border-top-right-radius: 20%;
+    margin: auto;
+    background-color: #99b38e;
+}
+
+.carousel a {
+    margin: 0 auto;
+}
+
+.carousel-caption {
+    display: flex;
+    padding: 2rem 3rem!important;
+    bottom: 0rem !important;
+    justify-self: center;
+    background-color: #99b38e;
+}
+
+.carousel-indicators {
+    background-color: transparent;
+    margin-bottom: 0.05rem !important;
+    justify-self: center;
+}
+
+.carousel-caption h2 {
+    font-size: 1.5vw;
+}
+
+.btn-block {
+    width: 100%;
+}
+
+.productLinkWrapper {
+    display: flex;
+}
+
+.linkDecorator {
+    color: #d1ae7a;
+    font-size: 1.1rem;
+}
+
+.productLink {
+    text-decoration: none;
+    color: #d1ae7a;
+    font-size: 1.1rem;
+    align-self: center;
+}
+
+.productSmallImage {
+    border: solid 2px #d1ae7a;
+}
+
+.bordered {
+    border: solid 1px #afa08a;
+}
+
+.backgroundColorBeige {
+    background-color: #ebe6dfb6;
+    color: rgb(59, 48, 25);
+}
+
+.reletiveToCenter {
+    display: flex;
+    gap: 1rem;
+}
+
+.text-right {
+    display: flex;
+    justify-content: end;
+}
+
+
+/* .banner {
+    width: 100vw !important;
+} */
+
+.teraccotaBg{
+    background-color: #e29678;
+}
+
+.greenBg{
+    background-color: #99b38e;
+}
+
+.buttonGreen {
+    background: #99b38e !important;
+    border-color: #99b38e !important;
+}
+
+.buttonOutlineGreen {
+    background: transparent !important;
+    border-color: #99b38e !important;
+}
+
+.buttonOutlineGreen:hover {
+    background: #99b38e !important;
+}
+
+.d-flex {
+    gap: .4rem;
+}
+
+/* MEDIA QUERIES at ProfileScreen.js*/
+@media screen and (max-width: 1282px) {
+    .profileScreenPadiing {
+        padding: 0 2rem 0 5rem;
+    }
+}
+
+@media screen and (max-width: 1025px) {
+    .profileScreenPadiing {
+        padding: 0 2rem 0 3rem;
+    }
+}
+
+@media screen and (max-width: 970px) {
+    .profileScreenPadiing {
+        padding: 1rem 2rem 0 4rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .profileScreenPadiing {
+        padding: 1rem 2rem 0 2rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .profileScreenPadiing {
+        padding: 1rem;
+    }
+}
+
+
+/* Padding Screen MQ in ProductListScreen.js */
+
+
+@media screen and (max-width: 1282px) {
+    .paddingFrameBig {
+        padding: 1rem 5rem;
+    }
+}
+
+@media screen and (max-width: 1025px) {
+    .paddingFrameBig {
+        padding: 1rem 3rem;
+    }
+}
+
+@media screen and (max-width: 970px) {
+    .paddingFrameBig {
+        padding: 1rem 0;
+    }
+}
+

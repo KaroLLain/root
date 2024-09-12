@@ -136,24 +136,24 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
-
-
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'root',
-        'USER': 'karollain',
-        'PASSWORD': os.environ.get('DB_PASS'),
-        'HOST': 'root-identifier.c5m8owmk4x5l.eu-north-1.rds.amazonaws.com',
-        'PORT': '5432'
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'root',
+#         'USER': 'karollain',
+#         'PASSWORD': os.environ.get('DB_PASS'),
+#         'HOST': 'root-identifier.c5m8owmk4x5l.eu-north-1.rds.amazonaws.com',
+#         'PORT': '5432'
+#     }
+# }
 
 
 
@@ -202,14 +202,12 @@ STATICFILES_DIRS = [
 MEDIA_ROOT = BASE_DIR / 'static/images'
 STATIC_ROOT = BASE_DIR / 'staticfiles'
 
-
-# DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
 CORS_ALLOW_ALL_ORIGINS = True
 
-AWS_QUERYSTRING_AUTH = False
+# DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+# AWS_QUERYSTRING_AUTH = False
 
-DEFAULT_FILE_STORAGES = "storages.backends.s3boto3.S3Boto3Storage"
+# DEFAULT_FILE_STORAGES = "storages.backends.s3boto3.S3Boto3Storage"
 
 # STORAGES = {
 #     "default": {
@@ -217,12 +215,12 @@ DEFAULT_FILE_STORAGES = "storages.backends.s3boto3.S3Boto3Storage"
 #         }
 # }
  
-AWS_STORAGE_BUCKET_NAME = 'rootshop-bucket'
+# AWS_STORAGE_BUCKET_NAME = 'rootshop-bucket'
  
-AWS_S3_SIGNATURE_VERSION = 's3v4'
-AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
-AWS_S3_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
-AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
+# AWS_S3_SIGNATURE_VERSION = 's3v4'
+# AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
+# AWS_S3_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
+# AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
 
 if os.getcwd() == '/app':
     DEBUG = False
